@@ -26,6 +26,7 @@ namespace Шаверма_мейкер
         double summ = 0; //стоимость шамвермы
         int ost = 0; //шкала остроты (счётчик)
 
+        //выбор основы
         private void radioButton_lavash_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton_lavash.Checked == true)
@@ -40,7 +41,7 @@ namespace Шаверма_мейкер
                 this.label3.Text = $"{summ}";
                 this.pictureBox_lavash.Visible = false;
             }
-        }
+        } //лаваш
 
         private void radioButton_pita_CheckedChanged(object sender, EventArgs e)
         {
@@ -56,7 +57,7 @@ namespace Шаверма_мейкер
                 this.label3.Text = $"{summ}";
                 this.pictureBox_pita.Visible = false;
             }
-        }
+        } //пита
 
         private void radioButton_tarelka_CheckedChanged(object sender, EventArgs e)
         {
@@ -72,8 +73,9 @@ namespace Шаверма_мейкер
                 this.label3.Text = $"{summ}";
                 this.pictureBox_tarelka.Visible = false;
             }
-        }
+        } //тарелка
 
+        //выбор мяса
         private void radioButton_chiken_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton_chiken.Checked == true)
@@ -88,7 +90,7 @@ namespace Шаверма_мейкер
                 this.label3.Text = $"{summ}";
                 this.pictureBox_chiken.Visible = false;
             }
-        }
+        } //курица
 
         private void radioButton_pork_CheckedChanged(object sender, EventArgs e)
         {
@@ -104,7 +106,7 @@ namespace Шаверма_мейкер
                 this.label3.Text = $"{summ}";
                 this.pictureBox_pork.Visible = false;
             }
-        }
+        } //говядина
 
         private void radioButton_mutton_CheckedChanged(object sender, EventArgs e)
         {
@@ -120,8 +122,9 @@ namespace Шаверма_мейкер
                 this.label3.Text = $"{summ}";
                 this.pictureBox_mutton.Visible = false;
             }
-        }
+        } //свинина
 
+        //выбор соуса
         private void radioButton_s_classic_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton_s_classic.Checked == true)
@@ -136,7 +139,7 @@ namespace Шаверма_мейкер
                 this.pictureBox_classic.Visible = false;
                 this.label3.Text = $"{summ}";
             }
-        }
+        } //классический
 
         private void radioButton_s_cheesy_CheckedChanged(object sender, EventArgs e)
         {
@@ -152,7 +155,7 @@ namespace Шаверма_мейкер
                 this.label3.Text = $"{summ}";
                 this.pictureBox1_cheesy.Visible = false;
             }
-        }
+        } //сырный
 
         private void radioButton_s_bbq_CheckedChanged(object sender, EventArgs e)
         {
@@ -168,7 +171,7 @@ namespace Шаверма_мейкер
                 this.label3.Text = $"{summ}";
                 this.pictureBox_bbq.Visible = false;
             }
-        }
+        } //bbq
 
         private void radioButton_s_adjeka_CheckedChanged(object sender, EventArgs e)
         {
@@ -186,7 +189,7 @@ namespace Шаверма_мейкер
                 this.pictureBox_adjika.Visible = false;
                 this.label3.Text = $"{summ}";
             }
-        }
+        } //аджика
 
         private void radioButton_s_1000island_CheckedChanged(object sender, EventArgs e)
         {
@@ -202,7 +205,7 @@ namespace Шаверма_мейкер
                 this.pictureBox_1000island.Visible = false;
                 this.label3.Text = $"{summ}";
             }
-        }
+        } //1000 островов
 
         private void radioButton_s_acute_CheckedChanged(object sender, EventArgs e)
         {
@@ -220,7 +223,9 @@ namespace Шаверма_мейкер
                 summ = summ - 30;
                 this.label3.Text = $"{summ}";
             }
-        }
+        } //острый
+
+        //допинги
 
         private void checkBox_cucumber_CheckedChanged(object sender, EventArgs e)
         {
@@ -228,6 +233,7 @@ namespace Шаверма_мейкер
             {
                 summ = summ + 30;
                 this.numericUpDown1.Visible = true;
+                this.pictureBox_cucumber.Visible = true;
                 this.label3.Text = $"{summ}";
             }
             else
@@ -235,9 +241,9 @@ namespace Шаверма_мейкер
                 summ = summ - 30;
                 this.numericUpDown1.Visible = false;
                 this.label3.Text = $"{summ}";
+                this.pictureBox_cucumber.Visible = false;
             }
-        }
-
+        } //огурцы
         private void checkBox_pickies_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox_pickies.Checked == true)
@@ -245,15 +251,16 @@ namespace Шаверма_мейкер
                 summ = summ + 30;
                 this.numericUpDown2.Visible = true;
                 this.label3.Text = $"{summ}";
+                this.pictureBox_pickies.Visible = true;
             }
             else
             {
                 summ = summ - 30;
                 this.numericUpDown2.Visible = false;
                 this.label3.Text = $"{summ}";
+                this.pictureBox_pickies.Visible = false;
             }
-        }
-
+        } //маринованый огурцы
         private void checkBox_tomato_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox_tomato.Checked == true)
@@ -268,8 +275,7 @@ namespace Шаверма_мейкер
                 this.numericUpDown3.Visible = false;
                 this.label3.Text = $"{summ}";
             }
-        }
-
+        } //помидоры
         private void checkBox_sauerkraut_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox_sauerkraut.Checked == true)
@@ -284,8 +290,7 @@ namespace Шаверма_мейкер
                 this.numericUpDown4.Visible = false;
                 this.label3.Text = $"{summ}";
             }
-        }
-
+        } //квашеная капуста
         private void checkBox_carrot_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox_carrot.Checked == true)
@@ -300,8 +305,7 @@ namespace Шаверма_мейкер
                 this.numericUpDown5.Visible = false;
                 this.label3.Text = $"{summ}";
             }
-        }
-
+        } //марковка
         private void checkBox_jalapenos_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox_jalapenos.Checked == true)
@@ -316,8 +320,7 @@ namespace Шаверма_мейкер
                 this.numericUpDown6.Visible = false;
                 this.label3.Text = $"{summ}";
             }
-        }
-
+        } //халопенью
         private void checkBox_salad_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox_salad.Checked == true)
@@ -332,8 +335,7 @@ namespace Шаверма_мейкер
                 this.numericUpDown7.Visible = false;
                 this.label3.Text = $"{summ}";
             }
-        }
-
+        } //салатный лист
         private void checkBox_bell_pepper_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox_bell_pepper.Checked == true)
@@ -349,7 +351,7 @@ namespace Шаверма_мейкер
                 this.label3.Text = $"{summ}";
             }
 
-        }
+        } //болгарский перец
         private void checkBox_dill_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox_dill.Checked == true)
@@ -364,8 +366,7 @@ namespace Шаверма_мейкер
                 summ = summ - (25 * Convert.ToInt32(this.numericUpDown9.Value));
                 this.label3.Text = $"{summ}";
             }
-        }
-
+        } //укроп
         private void checkBox_onion_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox_onion.Checked == true)
@@ -380,8 +381,9 @@ namespace Шаверма_мейкер
                 this.numericUpDown10.Visible = false;
                 this.label3.Text = $"{summ}";
             }
-        }
+        } //лук
 
+        //острота соуса
         private void radioButton_s_min_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton_s_min.Checked == true)
@@ -396,7 +398,7 @@ namespace Шаверма_мейкер
                 ost--;
                 this.label3.Text = $"{summ}";
             }
-        }
+        } //слабо
 
         private void radioButton_s_middel_CheckedChanged(object sender, EventArgs e)
         {
@@ -412,7 +414,7 @@ namespace Шаверма_мейкер
                 ost = ost - 2;
                 this.label3.Text = $"{summ}";
             }         
-        }
+        } //нормально
 
         private void radioButton_s_high_CheckedChanged(object sender, EventArgs e)
         {
@@ -428,7 +430,7 @@ namespace Шаверма_мейкер
                 ost = ost - 3;
                 this.label3.Text = $"{summ}";
             }            
-        }
+        } //сильно
 
         private void radioButton_s_super_CheckedChanged(object sender, EventArgs e)
         {
@@ -444,13 +446,15 @@ namespace Шаверма_мейкер
                 ost = ost + 4;
                 this.label3.Text = $"{summ}";
             }          
-        }
+        } //огненно
 
+        //тут будет выбор колличества допинга
         private void numericUpDown9_ValueChanged(object sender, EventArgs e)
         {
 
-        }
+        } 
 
+        //это для контекстного меню
         private void готовыеВариантыToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (this.готовыеВариантыToolStripMenuItem.Checked == true)
@@ -462,12 +466,6 @@ namespace Шаверма_мейкер
                 this.groupBox_main.Visible = false;
             }
         }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-            
-        }
-
         private void готовыеВариантыToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             if (this.готовыеВариантыToolStripMenuItem1.Checked == true)
@@ -480,7 +478,7 @@ namespace Шаверма_мейкер
             }
         }
 
-        //рецепт класической
+        //готовые рецепты
         private void radioButton_main_classic_CheckedChanged(object sender, EventArgs e) 
         {
             this.radioButton_lavash.Checked = true;
@@ -491,7 +489,7 @@ namespace Шаверма_мейкер
             this.checkBox_tomato.Checked = true;
             this.checkBox_onion.Checked = true;
             this.checkBox_pickies.Checked = true;
-        }
+        } //рецепт класической
 
         private void radioButton_main_cheesy_CheckedChanged(object sender, EventArgs e)
         {
@@ -504,7 +502,7 @@ namespace Шаверма_мейкер
             this.checkBox_onion.Checked = true;
             this.checkBox_pickies.Checked = true;
             this.checkBox_bell_pepper.Checked = true;
-        }
+        } //рецепт сырной
 
         private void radioButton_main_bbq_CheckedChanged(object sender, EventArgs e)
         {
@@ -518,7 +516,7 @@ namespace Шаверма_мейкер
             this.checkBox_pickies.Checked = false;
             this.checkBox_bell_pepper.Checked = true;
             this.checkBox_jalapenos.Checked = true;
-        }
+        } //рецепт bbq
 
         private void radioButton_main_no_CheckedChanged(object sender, EventArgs e)
         {
@@ -533,6 +531,6 @@ namespace Шаверма_мейкер
             this.checkBox_pickies.Checked = false;
             this.checkBox_bell_pepper.Checked = false;
             this.checkBox_jalapenos.Checked = false;
-        }
+        } //сам с усами
     }
 }

@@ -115,6 +115,8 @@
             this.pictureBox_1000island = new System.Windows.Forms.PictureBox();
             this.pictureBox_super = new System.Windows.Forms.PictureBox();
             this.pictureBox_classic = new System.Windows.Forms.PictureBox();
+            this.pictureBox_cucumber = new System.Windows.Forms.PictureBox();
+            this.pictureBox_pickies = new System.Windows.Forms.PictureBox();
             this.groupBox_osnova.SuspendLayout();
             this.groupBox_meat.SuspendLayout();
             this.groupBox_sauce.SuspendLayout();
@@ -158,6 +160,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_1000island)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_super)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_classic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cucumber)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_pickies)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox_osnova
@@ -1038,7 +1042,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(1250, 24);
             this.menuStrip1.TabIndex = 22;
             this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // toolStripMenuItem1
             // 
@@ -1211,12 +1214,38 @@
             this.pictureBox_classic.TabStop = false;
             this.pictureBox_classic.Visible = false;
             // 
+            // pictureBox_cucumber
+            // 
+            this.pictureBox_cucumber.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox_cucumber.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_cucumber.Image")));
+            this.pictureBox_cucumber.Location = new System.Drawing.Point(1030, 146);
+            this.pictureBox_cucumber.Name = "pictureBox_cucumber";
+            this.pictureBox_cucumber.Size = new System.Drawing.Size(80, 64);
+            this.pictureBox_cucumber.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox_cucumber.TabIndex = 35;
+            this.pictureBox_cucumber.TabStop = false;
+            this.pictureBox_cucumber.Visible = false;
+            // 
+            // pictureBox_pickies
+            // 
+            this.pictureBox_pickies.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox_pickies.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_pickies.Image")));
+            this.pictureBox_pickies.Location = new System.Drawing.Point(1105, 146);
+            this.pictureBox_pickies.Name = "pictureBox_pickies";
+            this.pictureBox_pickies.Size = new System.Drawing.Size(80, 64);
+            this.pictureBox_pickies.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox_pickies.TabIndex = 36;
+            this.pictureBox_pickies.TabStop = false;
+            this.pictureBox_pickies.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1250, 843);
             this.ContextMenuStrip = this.contextMenuStrip1;
+            this.Controls.Add(this.pictureBox_pickies);
+            this.Controls.Add(this.pictureBox_cucumber);
             this.Controls.Add(this.pictureBox_classic);
             this.Controls.Add(this.pictureBox_super);
             this.Controls.Add(this.pictureBox_1000island);
@@ -1300,6 +1329,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_1000island)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_super)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_classic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cucumber)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_pickies)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1391,6 +1422,8 @@
         private System.Windows.Forms.PictureBox pictureBox_1000island;
         private System.Windows.Forms.PictureBox pictureBox_super;
         private System.Windows.Forms.PictureBox pictureBox_classic;
+        private System.Windows.Forms.PictureBox pictureBox_cucumber;
+        private System.Windows.Forms.PictureBox pictureBox_pickies;
     }
 }
 
