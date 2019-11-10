@@ -88,7 +88,6 @@
             this.radioButton_s_min = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -98,11 +97,6 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.готовыеВариантыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.готовыеВариантыToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.настройкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.информацияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox_lavash = new System.Windows.Forms.PictureBox();
             this.pictureBox_pita = new System.Windows.Forms.PictureBox();
             this.pictureBox_tarelka = new System.Windows.Forms.PictureBox();
@@ -125,6 +119,19 @@
             this.pictureBox_pepper = new System.Windows.Forms.PictureBox();
             this.pictureBox_dill = new System.Windows.Forms.PictureBox();
             this.pictureBox_onion = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label_cucumber = new System.Windows.Forms.Label();
+            this.label_pickies = new System.Windows.Forms.Label();
+            this.label_tomatos = new System.Windows.Forms.Label();
+            this.label_sauerkraut = new System.Windows.Forms.Label();
+            this.label_carrot = new System.Windows.Forms.Label();
+            this.label_jalapenos = new System.Windows.Forms.Label();
+            this.label_salad = new System.Windows.Forms.Label();
+            this.label_pepper = new System.Windows.Forms.Label();
+            this.label_dill = new System.Windows.Forms.Label();
+            this.label_onion = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox_osnova.SuspendLayout();
             this.groupBox_meat.SuspendLayout();
             this.groupBox_sauce.SuspendLayout();
@@ -155,7 +162,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_lavash)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_pita)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_tarelka)).BeginInit();
@@ -423,6 +429,7 @@
             0,
             0});
             this.numericUpDown10.Visible = false;
+            this.numericUpDown10.ValueChanged += new System.EventHandler(this.numericUpDown10_ValueChanged);
             // 
             // numericUpDown9
             // 
@@ -462,6 +469,7 @@
             0,
             0});
             this.numericUpDown8.Visible = false;
+            this.numericUpDown8.ValueChanged += new System.EventHandler(this.numericUpDown8_ValueChanged);
             // 
             // numericUpDown7
             // 
@@ -481,6 +489,7 @@
             0,
             0});
             this.numericUpDown7.Visible = false;
+            this.numericUpDown7.ValueChanged += new System.EventHandler(this.numericUpDown7_ValueChanged);
             // 
             // numericUpDown6
             // 
@@ -500,6 +509,7 @@
             0,
             0});
             this.numericUpDown6.Visible = false;
+            this.numericUpDown6.ValueChanged += new System.EventHandler(this.numericUpDown6_ValueChanged);
             // 
             // numericUpDown5
             // 
@@ -519,6 +529,7 @@
             0,
             0});
             this.numericUpDown5.Visible = false;
+            this.numericUpDown5.ValueChanged += new System.EventHandler(this.numericUpDown5_ValueChanged);
             // 
             // numericUpDown4
             // 
@@ -538,6 +549,7 @@
             0,
             0});
             this.numericUpDown4.Visible = false;
+            this.numericUpDown4.ValueChanged += new System.EventHandler(this.numericUpDown4_ValueChanged);
             // 
             // numericUpDown3
             // 
@@ -557,6 +569,7 @@
             0,
             0});
             this.numericUpDown3.Visible = false;
+            this.numericUpDown3.ValueChanged += new System.EventHandler(this.numericUpDown3_ValueChanged);
             // 
             // numericUpDown2
             // 
@@ -576,6 +589,7 @@
             0,
             0});
             this.numericUpDown2.Visible = false;
+            this.numericUpDown2.ValueChanged += new System.EventHandler(this.numericUpDown2_ValueChanged);
             // 
             // numericUpDown1
             // 
@@ -595,6 +609,7 @@
             0,
             0});
             this.numericUpDown1.Visible = false;
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // pictureBox13
             // 
@@ -1047,47 +1062,6 @@
             this.готовыеВариантыToolStripMenuItem.Text = "Готовые варианты";
             this.готовыеВариантыToolStripMenuItem.Click += new System.EventHandler(this.готовыеВариантыToolStripMenuItem_Click);
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.настройкаToolStripMenuItem,
-            this.информацияToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1250, 24);
-            this.menuStrip1.TabIndex = 22;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.CheckOnClick = true;
-            this.toolStripMenuItem1.DoubleClickEnabled = true;
-            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.готовыеВариантыToolStripMenuItem1});
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(48, 20);
-            this.toolStripMenuItem1.Text = "Файл";
-            // 
-            // готовыеВариантыToolStripMenuItem1
-            // 
-            this.готовыеВариантыToolStripMenuItem1.Name = "готовыеВариантыToolStripMenuItem1";
-            this.готовыеВариантыToolStripMenuItem1.Size = new System.Drawing.Size(176, 22);
-            this.готовыеВариантыToolStripMenuItem1.Text = "Готовые варианты";
-            this.готовыеВариантыToolStripMenuItem1.Click += new System.EventHandler(this.готовыеВариантыToolStripMenuItem1_Click);
-            // 
-            // настройкаToolStripMenuItem
-            // 
-            this.настройкаToolStripMenuItem.Name = "настройкаToolStripMenuItem";
-            this.настройкаToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
-            this.настройкаToolStripMenuItem.Text = "Настройка";
-            // 
-            // информацияToolStripMenuItem
-            // 
-            this.информацияToolStripMenuItem.Name = "информацияToolStripMenuItem";
-            this.информацияToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
-            this.информацияToolStripMenuItem.Text = "Информация";
-            // 
             // pictureBox_lavash
             // 
             this.pictureBox_lavash.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_lavash.Image")));
@@ -1173,6 +1147,7 @@
             // pictureBox_bbq
             // 
             this.pictureBox_bbq.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox_bbq.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_bbq.BackgroundImage")));
             this.pictureBox_bbq.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_bbq.Image")));
             this.pictureBox_bbq.Location = new System.Drawing.Point(1105, 83);
             this.pictureBox_bbq.Name = "pictureBox_bbq";
@@ -1350,12 +1325,153 @@
             this.pictureBox_onion.TabStop = false;
             this.pictureBox_onion.Visible = false;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(941, 775);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(269, 56);
+            this.button1.TabIndex = 45;
+            this.button1.Text = "Свернуть шавуху!";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label_cucumber
+            // 
+            this.label_cucumber.AutoSize = true;
+            this.label_cucumber.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_cucumber.Location = new System.Drawing.Point(1078, 185);
+            this.label_cucumber.Name = "label_cucumber";
+            this.label_cucumber.Size = new System.Drawing.Size(25, 19);
+            this.label_cucumber.TabIndex = 46;
+            this.label_cucumber.Text = "x1";
+            this.label_cucumber.Visible = false;
+            // 
+            // label_pickies
+            // 
+            this.label_pickies.AutoSize = true;
+            this.label_pickies.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_pickies.Location = new System.Drawing.Point(1160, 185);
+            this.label_pickies.Name = "label_pickies";
+            this.label_pickies.Size = new System.Drawing.Size(25, 19);
+            this.label_pickies.TabIndex = 47;
+            this.label_pickies.Text = "x1";
+            this.label_pickies.Visible = false;
+            // 
+            // label_tomatos
+            // 
+            this.label_tomatos.AutoSize = true;
+            this.label_tomatos.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_tomatos.Location = new System.Drawing.Point(1078, 251);
+            this.label_tomatos.Name = "label_tomatos";
+            this.label_tomatos.Size = new System.Drawing.Size(25, 19);
+            this.label_tomatos.TabIndex = 48;
+            this.label_tomatos.Text = "x1";
+            this.label_tomatos.Visible = false;
+            // 
+            // label_sauerkraut
+            // 
+            this.label_sauerkraut.AutoSize = true;
+            this.label_sauerkraut.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_sauerkraut.Location = new System.Drawing.Point(1160, 251);
+            this.label_sauerkraut.Name = "label_sauerkraut";
+            this.label_sauerkraut.Size = new System.Drawing.Size(25, 19);
+            this.label_sauerkraut.TabIndex = 49;
+            this.label_sauerkraut.Text = "x1";
+            this.label_sauerkraut.Visible = false;
+            // 
+            // label_carrot
+            // 
+            this.label_carrot.AutoSize = true;
+            this.label_carrot.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_carrot.Location = new System.Drawing.Point(1078, 314);
+            this.label_carrot.Name = "label_carrot";
+            this.label_carrot.Size = new System.Drawing.Size(25, 19);
+            this.label_carrot.TabIndex = 50;
+            this.label_carrot.Text = "x1";
+            this.label_carrot.Visible = false;
+            // 
+            // label_jalapenos
+            // 
+            this.label_jalapenos.AutoSize = true;
+            this.label_jalapenos.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_jalapenos.Location = new System.Drawing.Point(1160, 314);
+            this.label_jalapenos.Name = "label_jalapenos";
+            this.label_jalapenos.Size = new System.Drawing.Size(25, 19);
+            this.label_jalapenos.TabIndex = 51;
+            this.label_jalapenos.Text = "x1";
+            this.label_jalapenos.Visible = false;
+            // 
+            // label_salad
+            // 
+            this.label_salad.AutoSize = true;
+            this.label_salad.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_salad.Location = new System.Drawing.Point(828, 373);
+            this.label_salad.Name = "label_salad";
+            this.label_salad.Size = new System.Drawing.Size(25, 19);
+            this.label_salad.TabIndex = 52;
+            this.label_salad.Text = "x1";
+            this.label_salad.Visible = false;
+            // 
+            // label_pepper
+            // 
+            this.label_pepper.AutoSize = true;
+            this.label_pepper.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_pepper.Location = new System.Drawing.Point(902, 373);
+            this.label_pepper.Name = "label_pepper";
+            this.label_pepper.Size = new System.Drawing.Size(25, 19);
+            this.label_pepper.TabIndex = 53;
+            this.label_pepper.Text = "x1";
+            this.label_pepper.Visible = false;
+            // 
+            // label_dill
+            // 
+            this.label_dill.AutoSize = true;
+            this.label_dill.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_dill.Location = new System.Drawing.Point(983, 373);
+            this.label_dill.Name = "label_dill";
+            this.label_dill.Size = new System.Drawing.Size(25, 19);
+            this.label_dill.TabIndex = 54;
+            this.label_dill.Text = "x1";
+            this.label_dill.Visible = false;
+            // 
+            // label_onion
+            // 
+            this.label_onion.AutoSize = true;
+            this.label_onion.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_onion.Location = new System.Drawing.Point(1059, 373);
+            this.label_onion.Name = "label_onion";
+            this.label_onion.Size = new System.Drawing.Size(25, 19);
+            this.label_onion.TabIndex = 55;
+            this.label_onion.Text = "x1";
+            this.label_onion.Visible = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(799, 433);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(74, 26);
+            this.label5.TabIndex = 56;
+            this.label5.Text = "label5";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1250, 843);
             this.ContextMenuStrip = this.contextMenuStrip1;
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label_onion);
+            this.Controls.Add(this.label_dill);
+            this.Controls.Add(this.label_pepper);
+            this.Controls.Add(this.label_salad);
+            this.Controls.Add(this.label_jalapenos);
+            this.Controls.Add(this.label_carrot);
+            this.Controls.Add(this.label_sauerkraut);
+            this.Controls.Add(this.label_tomatos);
+            this.Controls.Add(this.label_pickies);
+            this.Controls.Add(this.label_cucumber);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox_onion);
             this.Controls.Add(this.pictureBox_dill);
             this.Controls.Add(this.pictureBox_pepper);
@@ -1378,7 +1494,6 @@
             this.Controls.Add(this.pictureBox_tarelka);
             this.Controls.Add(this.pictureBox_pita);
             this.Controls.Add(this.pictureBox_lavash);
-            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox9);
@@ -1395,10 +1510,10 @@
             this.Controls.Add(this.groupBox_osnova);
             this.Controls.Add(this.groupBox_s_conf);
             this.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(7, 5, 7, 5);
             this.Name = "Form1";
             this.Text = "Шаверма мейкер";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox_osnova.ResumeLayout(false);
             this.groupBox_osnova.PerformLayout();
             this.groupBox_meat.ResumeLayout(false);
@@ -1435,8 +1550,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_lavash)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_pita)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_tarelka)).EndInit();
@@ -1480,7 +1593,6 @@
         private System.Windows.Forms.RadioButton radioButton_s_bbq;
         private System.Windows.Forms.RadioButton radioButton_s_cheesy;
         private System.Windows.Forms.RadioButton radioButton_s_classic;
-        private System.Windows.Forms.GroupBox groupBox_dopping;
         private System.Windows.Forms.CheckBox checkBox_onion;
         private System.Windows.Forms.CheckBox checkBox_dill;
         private System.Windows.Forms.CheckBox checkBox_salad;
@@ -1490,7 +1602,6 @@
         private System.Windows.Forms.CheckBox checkBox_sauerkraut;
         private System.Windows.Forms.CheckBox checkBox_tomato;
         private System.Windows.Forms.CheckBox checkBox_pickies;
-        private System.Windows.Forms.CheckBox checkBox_cucumber;
         private System.Windows.Forms.GroupBox groupBox_main;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox_s_conf;
@@ -1501,7 +1612,6 @@
         private System.Windows.Forms.RadioButton radioButton_s_acute;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.HelpProvider helpProvider1;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox12;
@@ -1525,7 +1635,6 @@
         private System.Windows.Forms.NumericUpDown numericUpDown4;
         private System.Windows.Forms.NumericUpDown numericUpDown3;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.RadioButton radioButton_main_no;
         private System.Windows.Forms.RadioButton radioButton_main_bbq;
         private System.Windows.Forms.RadioButton radioButton_main_cheesy;
@@ -1533,11 +1642,6 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem справкаToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem готовыеВариантыToolStripMenuItem;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem настройкаToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem информацияToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem готовыеВариантыToolStripMenuItem1;
         private System.Windows.Forms.PictureBox pictureBox_lavash;
         private System.Windows.Forms.PictureBox pictureBox_pita;
         private System.Windows.Forms.PictureBox pictureBox_tarelka;
@@ -1560,6 +1664,22 @@
         private System.Windows.Forms.PictureBox pictureBox_pepper;
         private System.Windows.Forms.PictureBox pictureBox_dill;
         private System.Windows.Forms.PictureBox pictureBox_onion;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label_cucumber;
+        private System.Windows.Forms.Label label_pickies;
+        private System.Windows.Forms.Label label_tomatos;
+        private System.Windows.Forms.Label label_sauerkraut;
+        private System.Windows.Forms.Label label_carrot;
+        private System.Windows.Forms.Label label_jalapenos;
+        private System.Windows.Forms.Label label_salad;
+        private System.Windows.Forms.Label label_pepper;
+        private System.Windows.Forms.Label label_dill;
+        private System.Windows.Forms.Label label_onion;
+        private System.Windows.Forms.Label label5;
+        public System.Windows.Forms.NumericUpDown numericUpDown1;
+        public System.Windows.Forms.CheckBox checkBox_cucumber;
+        public System.Windows.Forms.GroupBox groupBox_dopping;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 
