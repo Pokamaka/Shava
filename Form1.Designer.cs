@@ -123,6 +123,8 @@
             this.pictureBox_jalapenos = new System.Windows.Forms.PictureBox();
             this.pictureBox_salad = new System.Windows.Forms.PictureBox();
             this.pictureBox_pepper = new System.Windows.Forms.PictureBox();
+            this.pictureBox_dill = new System.Windows.Forms.PictureBox();
+            this.pictureBox_onion = new System.Windows.Forms.PictureBox();
             this.groupBox_osnova.SuspendLayout();
             this.groupBox_meat.SuspendLayout();
             this.groupBox_sauce.SuspendLayout();
@@ -174,6 +176,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_jalapenos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_salad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_pepper)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_dill)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_onion)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox_osnova
@@ -1322,12 +1326,38 @@
             this.pictureBox_pepper.TabStop = false;
             this.pictureBox_pepper.Visible = false;
             // 
+            // pictureBox_dill
+            // 
+            this.pictureBox_dill.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox_dill.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_dill.Image")));
+            this.pictureBox_dill.Location = new System.Drawing.Point(928, 328);
+            this.pictureBox_dill.Name = "pictureBox_dill";
+            this.pictureBox_dill.Size = new System.Drawing.Size(80, 64);
+            this.pictureBox_dill.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox_dill.TabIndex = 43;
+            this.pictureBox_dill.TabStop = false;
+            this.pictureBox_dill.Visible = false;
+            // 
+            // pictureBox_onion
+            // 
+            this.pictureBox_onion.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_onion.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_onion.Image")));
+            this.pictureBox_onion.Location = new System.Drawing.Point(1004, 328);
+            this.pictureBox_onion.Name = "pictureBox_onion";
+            this.pictureBox_onion.Size = new System.Drawing.Size(80, 64);
+            this.pictureBox_onion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox_onion.TabIndex = 44;
+            this.pictureBox_onion.TabStop = false;
+            this.pictureBox_onion.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1250, 843);
             this.ContextMenuStrip = this.contextMenuStrip1;
+            this.Controls.Add(this.pictureBox_onion);
+            this.Controls.Add(this.pictureBox_dill);
             this.Controls.Add(this.pictureBox_pepper);
             this.Controls.Add(this.pictureBox_salad);
             this.Controls.Add(this.pictureBox_jalapenos);
@@ -1427,6 +1457,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_jalapenos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_salad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_pepper)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_dill)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_onion)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1526,6 +1558,8 @@
         private System.Windows.Forms.PictureBox pictureBox_jalapenos;
         private System.Windows.Forms.PictureBox pictureBox_salad;
         private System.Windows.Forms.PictureBox pictureBox_pepper;
+        private System.Windows.Forms.PictureBox pictureBox_dill;
+        private System.Windows.Forms.PictureBox pictureBox_onion;
     }
 }
 

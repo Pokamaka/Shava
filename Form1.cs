@@ -371,12 +371,14 @@ namespace Шаверма_мейкер
                 this.numericUpDown9.Visible = true;
                 summ = summ + (25 * Convert.ToInt32(this.numericUpDown9.Value));
                 this.label3.Text = $"{summ}";
+                this.pictureBox_dill.Visible = true;
             }
             else
             {
                 this.numericUpDown9.Visible = false;
                 summ = summ - (25 * Convert.ToInt32(this.numericUpDown9.Value));
                 this.label3.Text = $"{summ}";
+                this.pictureBox_dill.Visible = false;
             }
         } //укроп
         private void checkBox_onion_CheckedChanged(object sender, EventArgs e)
@@ -386,12 +388,14 @@ namespace Шаверма_мейкер
                 summ = summ + 25;
                 this.numericUpDown10.Visible = true;
                 this.label3.Text = $"{summ}";
+                this.pictureBox_onion.Visible = true;
             }
             else
             {
                 summ = summ - 25;
                 this.numericUpDown10.Visible = false;
                 this.label3.Text = $"{summ}";
+                this.pictureBox_onion.Visible = false;
             }
         } //лук
 
