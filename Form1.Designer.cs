@@ -117,6 +117,11 @@
             this.pictureBox_classic = new System.Windows.Forms.PictureBox();
             this.pictureBox_cucumber = new System.Windows.Forms.PictureBox();
             this.pictureBox_pickies = new System.Windows.Forms.PictureBox();
+            this.pictureBox_tomato = new System.Windows.Forms.PictureBox();
+            this.pictureBox_sauerkraut = new System.Windows.Forms.PictureBox();
+            this.pictureBox_carrot = new System.Windows.Forms.PictureBox();
+            this.pictureBox_jalapenos = new System.Windows.Forms.PictureBox();
+            this.pictureBox_salad = new System.Windows.Forms.PictureBox();
             this.groupBox_osnova.SuspendLayout();
             this.groupBox_meat.SuspendLayout();
             this.groupBox_sauce.SuspendLayout();
@@ -162,6 +167,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_classic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cucumber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_pickies)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_tomato)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_sauerkraut)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_carrot)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_jalapenos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_salad)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox_osnova
@@ -1238,12 +1248,77 @@
             this.pictureBox_pickies.TabStop = false;
             this.pictureBox_pickies.Visible = false;
             // 
+            // pictureBox_tomato
+            // 
+            this.pictureBox_tomato.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox_tomato.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_tomato.Image")));
+            this.pictureBox_tomato.Location = new System.Drawing.Point(1030, 206);
+            this.pictureBox_tomato.Name = "pictureBox_tomato";
+            this.pictureBox_tomato.Size = new System.Drawing.Size(80, 64);
+            this.pictureBox_tomato.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox_tomato.TabIndex = 37;
+            this.pictureBox_tomato.TabStop = false;
+            this.pictureBox_tomato.Visible = false;
+            // 
+            // pictureBox_sauerkraut
+            // 
+            this.pictureBox_sauerkraut.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox_sauerkraut.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_sauerkraut.Image")));
+            this.pictureBox_sauerkraut.Location = new System.Drawing.Point(1105, 206);
+            this.pictureBox_sauerkraut.Name = "pictureBox_sauerkraut";
+            this.pictureBox_sauerkraut.Size = new System.Drawing.Size(80, 64);
+            this.pictureBox_sauerkraut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox_sauerkraut.TabIndex = 38;
+            this.pictureBox_sauerkraut.TabStop = false;
+            this.pictureBox_sauerkraut.Visible = false;
+            // 
+            // pictureBox_carrot
+            // 
+            this.pictureBox_carrot.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox_carrot.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_carrot.Image")));
+            this.pictureBox_carrot.Location = new System.Drawing.Point(1030, 269);
+            this.pictureBox_carrot.Name = "pictureBox_carrot";
+            this.pictureBox_carrot.Size = new System.Drawing.Size(80, 64);
+            this.pictureBox_carrot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox_carrot.TabIndex = 39;
+            this.pictureBox_carrot.TabStop = false;
+            this.pictureBox_carrot.Visible = false;
+            // 
+            // pictureBox_jalapenos
+            // 
+            this.pictureBox_jalapenos.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox_jalapenos.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_jalapenos.Image")));
+            this.pictureBox_jalapenos.Location = new System.Drawing.Point(1105, 269);
+            this.pictureBox_jalapenos.Name = "pictureBox_jalapenos";
+            this.pictureBox_jalapenos.Size = new System.Drawing.Size(80, 64);
+            this.pictureBox_jalapenos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox_jalapenos.TabIndex = 40;
+            this.pictureBox_jalapenos.TabStop = false;
+            this.pictureBox_jalapenos.Visible = false;
+            // 
+            // pictureBox_salad
+            // 
+            this.pictureBox_salad.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox_salad.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_salad.Image")));
+            this.pictureBox_salad.Location = new System.Drawing.Point(778, 328);
+            this.pictureBox_salad.Name = "pictureBox_salad";
+            this.pictureBox_salad.Size = new System.Drawing.Size(80, 64);
+            this.pictureBox_salad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox_salad.TabIndex = 41;
+            this.pictureBox_salad.TabStop = false;
+            this.pictureBox_salad.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1250, 843);
             this.ContextMenuStrip = this.contextMenuStrip1;
+            this.Controls.Add(this.pictureBox_salad);
+            this.Controls.Add(this.pictureBox_jalapenos);
+            this.Controls.Add(this.pictureBox_carrot);
+            this.Controls.Add(this.pictureBox_sauerkraut);
+            this.Controls.Add(this.pictureBox_tomato);
             this.Controls.Add(this.pictureBox_pickies);
             this.Controls.Add(this.pictureBox_cucumber);
             this.Controls.Add(this.pictureBox_classic);
@@ -1331,6 +1406,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_classic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cucumber)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_pickies)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_tomato)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_sauerkraut)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_carrot)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_jalapenos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_salad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1424,6 +1504,11 @@
         private System.Windows.Forms.PictureBox pictureBox_classic;
         private System.Windows.Forms.PictureBox pictureBox_cucumber;
         private System.Windows.Forms.PictureBox pictureBox_pickies;
+        private System.Windows.Forms.PictureBox pictureBox_tomato;
+        private System.Windows.Forms.PictureBox pictureBox_sauerkraut;
+        private System.Windows.Forms.PictureBox pictureBox_carrot;
+        private System.Windows.Forms.PictureBox pictureBox_jalapenos;
+        private System.Windows.Forms.PictureBox pictureBox_salad;
     }
 }
 

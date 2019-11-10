@@ -268,12 +268,14 @@ namespace Шаверма_мейкер
                 summ = summ + 30;
                 this.numericUpDown3.Visible = true;
                 this.label3.Text = $"{summ}";
+                this.pictureBox_tomato.Visible = true;
             }
             else
             {
                 summ = summ - 30;
                 this.numericUpDown3.Visible = false;
                 this.label3.Text = $"{summ}";
+                this.pictureBox_tomato.Visible = false;
             }
         } //помидоры
         private void checkBox_sauerkraut_CheckedChanged(object sender, EventArgs e)
@@ -283,12 +285,14 @@ namespace Шаверма_мейкер
                 summ = summ + 35;
                 this.numericUpDown4.Visible = true;
                 this.label3.Text = $"{summ}";
+                this.pictureBox_sauerkraut.Visible = true;
             }
             else
             {
                 summ = summ - 35;
                 this.numericUpDown4.Visible = false;
                 this.label3.Text = $"{summ}";
+                this.pictureBox_sauerkraut.Visible = false;
             }
         } //квашеная капуста
         private void checkBox_carrot_CheckedChanged(object sender, EventArgs e)
@@ -298,12 +302,14 @@ namespace Шаверма_мейкер
                 summ = summ + 30;
                 this.numericUpDown5.Visible = true;
                 this.label3.Text = $"{summ}";
+                this.pictureBox_carrot.Visible = true; 
             }
             else
             {
                 summ = summ - 30;
                 this.numericUpDown5.Visible = false;
                 this.label3.Text = $"{summ}";
+                this.pictureBox_carrot.Visible = false;
             }
         } //марковка
         private void checkBox_jalapenos_CheckedChanged(object sender, EventArgs e)
@@ -313,12 +319,14 @@ namespace Шаверма_мейкер
                 summ = summ + 35;
                 this.numericUpDown6.Visible = true;
                 this.label3.Text = $"{summ}";
+                this.pictureBox_jalapenos.Visible = true;
             }
             else
             {
                 summ = summ - 35;
                 this.numericUpDown6.Visible = false;
                 this.label3.Text = $"{summ}";
+                this.pictureBox_jalapenos.Visible = false;
             }
         } //халопенью
         private void checkBox_salad_CheckedChanged(object sender, EventArgs e)
@@ -328,12 +336,14 @@ namespace Шаверма_мейкер
                 summ = summ + 25;
                 this.numericUpDown7.Visible = true;
                 this.label3.Text = $"{summ}";
+                this.pictureBox_salad.Visible = true;
             }
             else
             {
                 summ = summ - 25;
                 this.numericUpDown7.Visible = false;
                 this.label3.Text = $"{summ}";
+                this.pictureBox_salad.Visible = false;
             }
         } //салатный лист
         private void checkBox_bell_pepper_CheckedChanged(object sender, EventArgs e)
