@@ -24,7 +24,7 @@ namespace Шаверма_мейкер
         }
 
         // double summ = 0; //стоимость шамвермы *ИЗМЕНИНА* -> Глобальная переменная: Data.Summ
-        //int ost = 0; //шкала остроты (счётчик) *ИЗМЕНИНА* -> Глобальная переменная: Data.Ost
+        //int Data.Ost = 0; //шкала остроты (счётчик) *ИЗМЕНИНА* -> Глобальная переменная: Data.Data.Ost
         int b, c, d, f, g, h, p, k, l;
         
         //выбор основы
@@ -33,13 +33,15 @@ namespace Шаверма_мейкер
             if (radioButton_lavash.Checked == true)
             {
                 Data.Summ = Data.Summ + 30;
-                this.label3.Text = $"{Data.Summ}";
+                Data.Calories = Data.Calories + 20;
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_lavash.Visible = true;
             }
             else
             {
                 Data.Summ = Data.Summ - 30;
-                this.label3.Text = $"{Data.Summ}";
+                Data.Calories = Data.Calories - 20;
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_lavash.Visible = false;
             }
         } //лаваш
@@ -48,13 +50,15 @@ namespace Шаверма_мейкер
             if (radioButton_pita.Checked == true)
             {
                 Data.Summ = Data.Summ + 15;
-                this.label3.Text = $"{Data.Summ}";
+                Data.Calories = Data.Calories + 25;
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_pita.Visible = true;
             }
             else
             {
                 Data.Summ = Data.Summ - 15;
-                this.label3.Text = $"{Data.Summ}";
+                Data.Calories = Data.Calories - 25;
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_pita.Visible = false;
             }
         } //пита
@@ -63,13 +67,13 @@ namespace Шаверма_мейкер
             if (radioButton_lavash.Checked == true)
             {
                 Data.Summ = Data.Summ + 50;
-                this.label3.Text = $"{Data.Summ}";
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_tarelka.Visible = true;
             }
             else
             {
                 Data.Summ = Data.Summ - 50;
-                this.label3.Text = $"{Data.Summ}";
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_tarelka.Visible = false;
             }
         } //тарелка
@@ -80,13 +84,15 @@ namespace Шаверма_мейкер
             if (radioButton_chiken.Checked == true)
             {
                 Data.Summ = Data.Summ + 30;
-                this.label3.Text = $"{Data.Summ}";
+                Data.Calories = Data.Calories + 200;
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_chiken.Visible = true;
             }
             else
             {
                 Data.Summ = Data.Summ - 30;
-                this.label3.Text = $"{Data.Summ}";
+                Data.Calories = Data.Calories - 200;
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_chiken.Visible = false;
             }
         } //курица
@@ -95,13 +101,15 @@ namespace Шаверма_мейкер
             if (radioButton_pork.Checked == true)
             {
                 Data.Summ = Data.Summ + 15;
-                this.label3.Text = $"{Data.Summ}";
+                Data.Calories = Data.Calories + 220;
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_mutton.Visible = true;
             }
             else
             {
                 Data.Summ = Data.Summ - 15;
-                this.label3.Text = $"{Data.Summ}";
+                Data.Calories = Data.Calories - 220;
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_mutton.Visible = false;
             }
         } //говядина
@@ -110,13 +118,15 @@ namespace Шаверма_мейкер
             if (radioButton_mutton.Checked == true)
             {
                 Data.Summ = Data.Summ + 40;
-                this.label3.Text = $"{Data.Summ}";
+                Data.Calories = Data.Calories + 210;
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_pork.Visible = true;
             }
             else
             {
                 Data.Summ = Data.Summ - 40;
-                this.label3.Text = $"{Data.Summ}";
+                Data.Calories = Data.Calories - 210;
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_pork.Visible = false;
             }
         } //свинина
@@ -127,14 +137,16 @@ namespace Шаверма_мейкер
             if (radioButton_s_classic.Checked == true)
             {
                 Data.Summ = Data.Summ + 25;
-                this.label3.Text = $"{Data.Summ}";
+                Data.Calories = Data.Calories + 20;
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_classic.Visible = true;
             }
             else
             {
                 Data.Summ = Data.Summ - 25;
+                Data.Calories = Data.Calories - 20;
                 this.pictureBox_classic.Visible = false;
-                this.label3.Text = $"{Data.Summ}";
+                this.label3.Text = $"{Data.Summ} руб.";
             }
         } //классический
         private void radioButton_s_cheesy_CheckedChanged(object sender, EventArgs e)
@@ -142,13 +154,15 @@ namespace Шаверма_мейкер
             if (radioButton_s_cheesy.Checked == true)
             {
                 Data.Summ = Data.Summ + 30;
-                this.label3.Text = $"{Data.Summ}";
+                Data.Calories = Data.Calories + 25;
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox1_cheesy.Visible = true;
             }
             else
             {
                 Data.Summ = Data.Summ - 30;
-                this.label3.Text = $"{Data.Summ}";
+                Data.Calories = Data.Calories - 25;
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox1_cheesy.Visible = false;
             }
         } //сырный
@@ -157,13 +171,15 @@ namespace Шаверма_мейкер
             if (radioButton_s_bbq.Checked == true)
             {
                 Data.Summ = Data.Summ + 35;
-                this.label3.Text = $"{Data.Summ}";
+                Data.Calories = Data.Calories + 25;
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_bbq.Visible = true;
             }
             else
             {
                 Data.Summ = Data.Summ - 35;
-                this.label3.Text = $"{Data.Summ}";
+                Data.Calories = Data.Calories - 25;
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_bbq.Visible = false;
             }
         } //bbq
@@ -172,16 +188,18 @@ namespace Шаверма_мейкер
             if (radioButton_s_adjeka.Checked == true)
             {
                 Data.Summ = Data.Summ + 40;
+                Data.Calories = Data.Calories + 25;
                 this.groupBox_s_conf.Visible = true;
                 this.pictureBox_adjika.Visible = true;
-                this.label3.Text = $"{Data.Summ}";
+                this.label3.Text = $"{Data.Summ} руб.";
             }
             else
             {
-                this.groupBox_s_conf.Visible = false;
                 Data.Summ = Data.Summ - 40;
+                Data.Calories = Data.Calories - 25;
+                this.groupBox_s_conf.Visible = false;
                 this.pictureBox_adjika.Visible = false;
-                this.label3.Text = $"{Data.Summ}";
+                this.label3.Text = $"{Data.Summ} руб.";
             }
         } //аджика
         private void radioButton_s_1000island_CheckedChanged(object sender, EventArgs e)
@@ -189,14 +207,16 @@ namespace Шаверма_мейкер
             if (radioButton_s_1000island.Checked == true)
             {
                 Data.Summ = Data.Summ + 35;
+                Data.Calories = Data.Calories + 20;
                 this.pictureBox_1000island.Visible = true;
-                this.label3.Text = $"{Data.Summ}";
+                this.label3.Text = $"{Data.Summ} руб.";
             }
             else
             {
                 Data.Summ = Data.Summ - 35;
+                Data.Calories = Data.Calories - 20;
                 this.pictureBox_1000island.Visible = false;
-                this.label3.Text = $"{Data.Summ}";
+                this.label3.Text = $"{Data.Summ} руб.";
             }
         } //1000 островов
         private void radioButton_s_acute_CheckedChanged(object sender, EventArgs e)
@@ -204,16 +224,18 @@ namespace Шаверма_мейкер
             if (radioButton_s_acute.Checked == true)
             {
                 Data.Summ = Data.Summ + 40;
+                Data.Calories = Data.Calories + 25;
                 this.groupBox_s_conf.Visible = true;
                 this.pictureBox_super.Visible = true;
-                this.label3.Text = $"{Data.Summ}";
+                this.label3.Text = $"{Data.Summ} руб.";
             }
             else
             {
+                Data.Summ = Data.Summ - 30;
+                Data.Calories = Data.Calories - 25;
                 this.groupBox_s_conf.Visible = false;
                 this.pictureBox_super.Visible = false;
-                Data.Summ = Data.Summ - 30;
-                this.label3.Text = $"{Data.Summ}";
+                this.label3.Text = $"{Data.Summ} руб.";
             }
         } //острый
 
@@ -280,14 +302,16 @@ namespace Шаверма_мейкер
                  this.pictureBox_cucumber.Visible = true;                
                 //this.label5.Text = Convert.ToString(a);
                  Data.Summ = Data.Summ + (30 * a);
-                 this.label3.Text = $"{Data.Summ}";
+                Data.Calories = Data.Calories + 30;
+                this.label3.Text = $"{Data.Summ} руб.";
              }
              else
              {                
                  this.numericUpDown1.Visible = false;
                  this.label_cucumber.Visible = false;
                  Data.Summ = Data.Summ - (30 * a);
-                 this.label3.Text = $"{Data.Summ}";
+                Data.Calories = Data.Calories - 30;
+                this.label3.Text = $"{Data.Summ} руб.";
                  this.pictureBox_cucumber.Visible = false;
              } 
         } //огурцы 
@@ -296,17 +320,19 @@ namespace Шаверма_мейкер
             if (checkBox_pickies.Checked == true)
             {
                 Data.Summ = Data.Summ + 30;
+                Data.Calories = Data.Calories + 30;
                 this.numericUpDown2.Visible = true;
                 this.label_pickies.Visible = true;
-                this.label3.Text = $"{Data.Summ}";
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_pickies.Visible = true;
             }
             else
             {
                 Data.Summ = Data.Summ - 30;
+                Data.Calories = Data.Calories - 30;
                 this.numericUpDown2.Visible = false;
                 this.label_pickies.Visible = false;
-                this.label3.Text = $"{Data.Summ}";
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_pickies.Visible = false;
             }
         } //маринованый огурцы
@@ -315,17 +341,19 @@ namespace Шаверма_мейкер
             if (checkBox_tomato.Checked == true)
             {
                 Data.Summ = Data.Summ + 30;
+                Data.Calories = Data.Calories + 30;
                 this.numericUpDown3.Visible = true;
                 this.label_tomatos.Visible = true;
-                this.label3.Text = $"{Data.Summ}";
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_tomato.Visible = true;
             }
             else
             {
                 Data.Summ = Data.Summ - 30;
+                Data.Calories = Data.Calories - 30;
                 this.numericUpDown3.Visible = false;
                 this.label_tomatos.Visible = false;
-                this.label3.Text = $"{Data.Summ}";
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_tomato.Visible = false;
             }
         } //помидоры
@@ -334,17 +362,19 @@ namespace Шаверма_мейкер
             if (checkBox_sauerkraut.Checked == true)
             {
                 Data.Summ = Data.Summ + 35;
+                Data.Calories = Data.Calories + 30;
                 this.numericUpDown4.Visible = true;
                 this.label_sauerkraut.Visible = true;
-                this.label3.Text = $"{Data.Summ}";
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_sauerkraut.Visible = true;
             }
             else
             {
                 Data.Summ = Data.Summ - 35;
+                Data.Calories = Data.Calories - 30;
                 this.numericUpDown4.Visible = false;
                 this.label_sauerkraut.Visible = false;
-                this.label3.Text = $"{Data.Summ}";
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_sauerkraut.Visible = false;
             }
         } //квашеная капуста
@@ -353,17 +383,19 @@ namespace Шаверма_мейкер
             if (checkBox_carrot.Checked == true)
             {
                 Data.Summ = Data.Summ + 30;
+                Data.Calories = Data.Calories + 30;
                 this.numericUpDown5.Visible = true;
                 this.label_carrot.Visible = true;
-                this.label3.Text = $"{Data.Summ}";
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_carrot.Visible = true; 
             }
             else
             {
                 Data.Summ = Data.Summ - 30;
+                Data.Calories = Data.Calories - 30;
                 this.numericUpDown5.Visible = false;
                 this.label_carrot.Visible = false;
-                this.label3.Text = $"{Data.Summ}";
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_carrot.Visible = false;
             }
         } //марковка
@@ -372,17 +404,19 @@ namespace Шаверма_мейкер
             if (checkBox_jalapenos.Checked == true)
             {
                 Data.Summ = Data.Summ + 35;
+                Data.Calories = Data.Calories + 30;
                 this.numericUpDown6.Visible = true;
                 this.label_jalapenos.Visible = true;
-                this.label3.Text = $"{Data.Summ}";
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_jalapenos.Visible = true;
             }
             else
             {
                 Data.Summ = Data.Summ - 35;
+                Data.Calories = Data.Calories - 30;
                 this.numericUpDown6.Visible = false;
                 this.label_jalapenos.Visible = false;
-                this.label3.Text = $"{Data.Summ}";
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_jalapenos.Visible = false;
             }
         } //халопенью
@@ -391,17 +425,19 @@ namespace Шаверма_мейкер
             if (checkBox_salad.Checked == true)
             {
                 Data.Summ = Data.Summ + 25;
+                Data.Calories = Data.Calories + 30;
                 this.numericUpDown7.Visible = true;
                 this.label_salad.Visible = true;
-                this.label3.Text = $"{Data.Summ}";
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_salad.Visible = true;
             }
             else
             {
                 Data.Summ = Data.Summ - 25;
+                Data.Calories = Data.Calories - 30;
                 this.numericUpDown7.Visible = false;
                 this.label_salad.Visible = false;
-                this.label3.Text = $"{Data.Summ}";
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_salad.Visible = false;
             }
         } //салатный лист
@@ -410,17 +446,19 @@ namespace Шаверма_мейкер
             if (checkBox_bell_pepper.Checked == true)
             {
                 Data.Summ = Data.Summ + 35;
+                Data.Calories = Data.Calories + 30;
                 this.numericUpDown8.Visible = true;
                 this.label_pepper.Visible = true;
-                this.label3.Text = $"{Data.Summ}";
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_pepper.Visible = true;
             }
             else
             {
                 Data.Summ = Data.Summ - 35;
+                Data.Calories = Data.Calories - 30;
                 this.numericUpDown8.Visible = false;
                 this.label_pepper.Visible = false;
-                this.label3.Text = $"{Data.Summ}";
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_pepper.Visible = false;
             }
 
@@ -432,7 +470,8 @@ namespace Шаверма_мейкер
                 this.numericUpDown9.Visible = true;
                 this.label_dill.Visible = true;
                 Data.Summ = Data.Summ + 25;
-                this.label3.Text = $"{Data.Summ}";
+                Data.Calories = Data.Calories + 30;
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_dill.Visible = true;
             }
             else
@@ -440,7 +479,8 @@ namespace Шаверма_мейкер
                 this.numericUpDown9.Visible = false;
                 this.label_dill.Visible = false;
                 Data.Summ = Data.Summ - 25;
-                this.label3.Text = $"{Data.Summ}";
+                Data.Calories = Data.Calories - 30;
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_dill.Visible = false;
             }
         } //укроп
@@ -449,17 +489,19 @@ namespace Шаверма_мейкер
             if (checkBox_onion.Checked == true)
             {
                 Data.Summ = Data.Summ + 25;
+                Data.Calories = Data.Calories + 30;
                 this.numericUpDown10.Visible = true;
                 this.label_onion.Visible = true;
-                this.label3.Text = $"{Data.Summ}";
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_onion.Visible = true;
             }
             else
             {
                 Data.Summ = Data.Summ - 25;
+                Data.Calories = Data.Calories - 30;
                 this.numericUpDown10.Visible = false;
                 this.label_onion.Visible = false;
-                this.label3.Text = $"{Data.Summ}";
+                this.label3.Text = $"{Data.Summ} руб.";
                 this.pictureBox_onion.Visible = false;
             }
         } //лук
@@ -470,14 +512,14 @@ namespace Шаверма_мейкер
             if (radioButton_s_min.Checked == true)
             {
                 Data.Summ = Data.Summ + 5;
-                ost++;
-                this.label3.Text = $"{Data.Summ}";
+                Data.Ost++;
+                this.label3.Text = $"{Data.Summ} руб.";
             }
             else
             {
                 Data.Summ = Data.Summ - 5;
-                ost--;
-                this.label3.Text = $"{Data.Summ}";
+                Data.Ost--;
+                this.label3.Text = $"{Data.Summ} руб.";
             }
         } //слабо
         private void radioButton_s_middel_CheckedChanged(object sender, EventArgs e)
@@ -485,14 +527,14 @@ namespace Шаверма_мейкер
             if (radioButton_s_middel.Checked == true)
             {
                 Data.Summ = Data.Summ + 10;
-                ost = ost + 2;
-                this.label3.Text = $"{Data.Summ}";
+                Data.Ost = Data.Ost + 2;
+                this.label3.Text = $"{Data.Summ} руб.";
             }
             else
             {
                 Data.Summ = Data.Summ - 10;
-                ost = ost - 2;
-                this.label3.Text = $"{Data.Summ}";
+                Data.Ost = Data.Ost - 2;
+                this.label3.Text = $"{Data.Summ} руб.";
             }         
         } //нормально
         private void radioButton_s_high_CheckedChanged(object sender, EventArgs e)
@@ -500,14 +542,14 @@ namespace Шаверма_мейкер
             if (radioButton_s_high.Checked == true)
             {
                 Data.Summ = Data.Summ + 15;
-                ost = ost + 3;
-                this.label3.Text = $"{Data.Summ}";
+                Data.Ost = Data.Ost + 3;
+                this.label3.Text = $"{Data.Summ} руб.";
             }
             else
             {
                 Data.Summ = Data.Summ - 15;
-                ost = ost - 3;
-                this.label3.Text = $"{Data.Summ}";
+                Data.Ost = Data.Ost - 3;
+                this.label3.Text = $"{Data.Summ} руб.";
             }            
         } //сильно
         private void radioButton_s_super_CheckedChanged(object sender, EventArgs e)
@@ -515,14 +557,14 @@ namespace Шаверма_мейкер
             if (radioButton_s_super.Checked == true)
             {
                 Data.Summ = Data.Summ + 20;
-                ost = ost + 4;
-                this.label3.Text = $"{Data.Summ}";
+                Data.Ost = Data.Ost + 4;
+                this.label3.Text = $"{Data.Summ} руб.";
             }
             else
             {
                 Data.Summ = Data.Summ - 20;
-                ost = ost + 4;
-                this.label3.Text = $"{Data.Summ}";
+                Data.Ost = Data.Ost + 4;
+                this.label3.Text = $"{Data.Summ} руб.";
             }          
         } //огненно
 
