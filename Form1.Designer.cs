@@ -122,6 +122,7 @@
             this.pictureBox_carrot = new System.Windows.Forms.PictureBox();
             this.pictureBox_jalapenos = new System.Windows.Forms.PictureBox();
             this.pictureBox_salad = new System.Windows.Forms.PictureBox();
+            this.pictureBox_pepper = new System.Windows.Forms.PictureBox();
             this.groupBox_osnova.SuspendLayout();
             this.groupBox_meat.SuspendLayout();
             this.groupBox_sauce.SuspendLayout();
@@ -172,6 +173,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_carrot)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_jalapenos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_salad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_pepper)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox_osnova
@@ -1308,12 +1310,25 @@
             this.pictureBox_salad.TabStop = false;
             this.pictureBox_salad.Visible = false;
             // 
+            // pictureBox_pepper
+            // 
+            this.pictureBox_pepper.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox_pepper.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_pepper.Image")));
+            this.pictureBox_pepper.Location = new System.Drawing.Point(853, 328);
+            this.pictureBox_pepper.Name = "pictureBox_pepper";
+            this.pictureBox_pepper.Size = new System.Drawing.Size(80, 64);
+            this.pictureBox_pepper.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox_pepper.TabIndex = 42;
+            this.pictureBox_pepper.TabStop = false;
+            this.pictureBox_pepper.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1250, 843);
             this.ContextMenuStrip = this.contextMenuStrip1;
+            this.Controls.Add(this.pictureBox_pepper);
             this.Controls.Add(this.pictureBox_salad);
             this.Controls.Add(this.pictureBox_jalapenos);
             this.Controls.Add(this.pictureBox_carrot);
@@ -1411,6 +1426,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_carrot)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_jalapenos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_salad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_pepper)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1509,6 +1525,7 @@
         private System.Windows.Forms.PictureBox pictureBox_carrot;
         private System.Windows.Forms.PictureBox pictureBox_jalapenos;
         private System.Windows.Forms.PictureBox pictureBox_salad;
+        private System.Windows.Forms.PictureBox pictureBox_pepper;
     }
 }
 

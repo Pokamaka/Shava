@@ -353,12 +353,14 @@ namespace Шаверма_мейкер
                 summ = summ + 35;
                 this.numericUpDown8.Visible = true;
                 this.label3.Text = $"{summ}";
+                this.pictureBox_pepper.Visible = true;
             }
             else
             {
                 summ = summ - 35;
                 this.numericUpDown8.Visible = false;
                 this.label3.Text = $"{summ}";
+                this.pictureBox_pepper.Visible = false;
             }
 
         } //болгарский перец
