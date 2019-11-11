@@ -19,8 +19,10 @@ namespace Шаверма_мейкер
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            
+            this.label5.Text = Convert.ToString(Data.Summ);
+            this.label7.Text = Convert.ToString(Data.Calories);
 
         }
+
     }
 }

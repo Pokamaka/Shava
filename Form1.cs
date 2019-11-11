@@ -23,8 +23,8 @@ namespace Шаверма_мейкер
 
         }
 
-        // double summ = 0; //стоимость шамвермы *ИЗМЕНИНА* -> Глобальная переменная: Data.Summ
-        //int Data.Ost = 0; //шкала остроты (счётчик) *ИЗМЕНИНА* -> Глобальная переменная: Data.Data.Ost
+        //double summ = 0; //стоимость шамвермы       *ИЗМЕНИНА* -> Глобальная переменная: Data.Summ
+        //int Data.Ost = 0; //шкала остроты (счётчик) *ИЗМЕНИНА* -> Глобальная переменная: Data.Ost
         int b, c, d, f, g, h, p, k, l;
         
         //выбор основы
@@ -718,6 +718,12 @@ namespace Шаверма_мейкер
             t.SetToolTip(radioButton_main_bbq, "Лаваш, курица, соус BBQ, огурцы, салат, помидоры, лук, маринованый огурцы, болгарский перец, халапенью");
             t.SetToolTip(radioButton_main_cheesy, "Лаваш, курица, сырный соус, огурцы, салат, помидоры, лук, мариновыный огурчики, болгарский перец");
             t.SetToolTip(radioButton_main_no, "Сам себе барин");
+        }
+
+        //для корекнтого выхода
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
